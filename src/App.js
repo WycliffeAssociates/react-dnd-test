@@ -47,15 +47,32 @@ class App extends Component {
       }, {
         id: 9,
         text: "Item 9"
+      }, {
+        id: 10,
+        text: "Item 10"
+      }, {
+        id: 11,
+        text: "Item 11"
       }
     ];
     return (
       <div style={{
         ...style
       }}>
-        <TakeContainer id={1} list={listOne}/>
-        <TakeContainer id={2} list={listTwo}/>
-        <TakeContainer id={3} list={listThree}/>
+        <div style={{
+          overflowY: "scroll"
+        }}>
+          <TakeContainer id={1} list={listOne}/>
+        </div>
+        <div style={{
+          overflowY: "scroll"
+        }}>
+          <TakeContainer id={2} list={listTwo}/>
+        </div>
+        <div style={{
+          overflowY: "scroll"
+        }}>
+          <TakeContainer id={3} list={listThree}/></div>
       </div>
     );
   }
